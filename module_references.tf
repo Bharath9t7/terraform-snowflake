@@ -26,3 +26,10 @@ module "raw_sales_customer" {
   target_schema_name = module.raw_sales.sales_schema_op
   target_env         = var.target_env
 }
+
+module "curated_finance_transactions" {
+  source             = "./modules/curated/finance/transactions"
+  target_db_name     = module.curated.db_curated_op
+  target_schema_name = module.curated_finance.finance_schema_op
+  target_env         = var.target_env
+}
