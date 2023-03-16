@@ -4,7 +4,7 @@ on:
   workflow_run:
     workflows: [ terraform_plan_dev ]
     types: [completed]
-    branches: [dev]
+    branches: [qa]
     paths:
       - 'terraform/**'
 
