@@ -1,7 +1,7 @@
 resource "snowflake_table" "demo" {
   database = var.target_db_name
   schema   = var.target_schema_name
-  name     = "customer"
+  name     = "CUSTOMER"
 
   column {
     name = "ID"
@@ -9,7 +9,7 @@ resource "snowflake_table" "demo" {
   }
 
   column {
-    name = "customer_name"
+    name = "CUSTOMER_NAME"
     type = "VARCHAR(20)"
   }
 }
