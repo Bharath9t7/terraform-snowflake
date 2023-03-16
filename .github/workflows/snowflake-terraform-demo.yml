@@ -2,7 +2,7 @@ name: "Snowflake Terraform Demo Workflow"
 
 on:
   push:
-    branches: [dev]
+    branches: [main]
     paths:
       - 'terraform/**'
 
