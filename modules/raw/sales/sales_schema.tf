@@ -1,6 +1,6 @@
 resource "snowflake_schema" "sales_schema" {
   database     = var.target_db_name
-  name         = "sales"
+  name         = "SALES"
   is_transient = false
 }
 
