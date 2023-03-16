@@ -3,6 +3,11 @@ module "raw" {
   target_env = var.target_env
 }
 
+module "curated" {
+  source     = "./modules/curated"
+  target_env = var.target_env
+}
+
 module "raw_sales" {
   source         = "./modules/raw/sales"
   target_db_name = module.raw.db_raw_op
