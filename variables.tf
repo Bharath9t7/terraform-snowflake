@@ -1,4 +1,4 @@
 variable "target_env" {
-  type = string
+  type    = string
   default = "DEV"
 }
