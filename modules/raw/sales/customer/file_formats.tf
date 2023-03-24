@@ -1,27 +1,39 @@
 # file formats to load data from stages
 
 resource "snowflake_file_format" "file_format_pipe" {
-  database        = var.target_db_name
-  schema          = var.target_schema_name
-  name            = "SNOWFLAKE_LOAD_FF_PIPE"
-  format_type     = "CSV"
-  field_delimiter = "|"
-  compression = "AUTO"
+  database         = var.target_db_name
+  schema           = var.target_schema_name
+  name             = "SNOWFLAKE_LOAD_FF_PIPE"
+  format_type      = "CSV"
+  field_delimiter  = "|"
+  compression      = "AUTO"
   record_delimiter = "\n"
-  binary_format = "UTF-8"
-  skip_header = "0"
+  binary_format    = "UTF-8"
+  skip_header      = "0"
 }
 
 resource "snowflake_file_format" "file_format_comma" {
-  database        = var.target_db_name
-  schema          = var.target_schema_name
-  name            = "SNOWFLAKE_LOAD_FF_COMMA"
-  format_type     = "CSV"
-  field_delimiter = ","
-  compression = "AUTO"
+  database         = var.target_db_name
+  schema           = var.target_schema_name
+  name             = "SNOWFLAKE_LOAD_FF_COMMA"
+  format_type      = "CSV"
+  field_delimiter  = ","
+  compression      = "AUTO"
   record_delimiter = "\n"
-  binary_format = "UTF-8"
-  skip_header = "0"
+  binary_format    = "UTF-8"
+  skip_header      = "0"
+}
+
+resource "snowflake_file_format" "file_format_pipe2" {
+  database         = var.target_db_name
+  schema           = var.target_schema_name
+  name             = "SNOWFLAKE_LOAD_FF_PIPE2"
+  format_type      = "CSV"
+  field_delimiter  = "|"
+  compression      = "AUTO"
+  record_delimiter = "\n"
+  binary_format    = "UTF-8"
+  skip_header      = "0"
 }
 
 # resource "snowflake_file_format_grant" "file_format_ownership_grant_1" {
