@@ -9,6 +9,7 @@ resource "snowflake_file_format" "file_format_pipe" {
   compression = "AUTO"
   record_delimiter = "\n"
   binary_format = "UTF-8"
+  skip_header = "0"
 }
 
 resource "snowflake_file_format" "file_format_comma" {
@@ -20,6 +21,7 @@ resource "snowflake_file_format" "file_format_comma" {
   compression = "AUTO"
   record_delimiter = "\n"
   binary_format = "UTF-8"
+  skip_header = "0"
 }
 
 # resource "snowflake_file_format_grant" "file_format_ownership_grant_1" {
