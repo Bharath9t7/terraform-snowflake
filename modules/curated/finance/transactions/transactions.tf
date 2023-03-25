@@ -15,6 +15,6 @@ resource "snowflake_table" "transactions" {
 
   column {
     name = "transaction_time"
-    type = "datetime"
+    type = "TIMESTAMP_NTZ(9)"
   }
 }
