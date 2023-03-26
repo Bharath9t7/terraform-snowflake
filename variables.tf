@@ -1,3 +1,3 @@
-variable "target_env" {
+variable "env" {
   type    = string
 }
