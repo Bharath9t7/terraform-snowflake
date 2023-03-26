@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     environment: dev
     env:
-      TF_VAR_target_env: "PROD"
+      TF_VAR_env: "PROD"
     
     steps:
       - name: Checkout
