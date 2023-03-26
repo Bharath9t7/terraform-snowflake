@@ -60,7 +60,7 @@ resource "snowflake_file_format" "file_format_pipe2" {
 resource "snowflake_file_format" "file_format_comma2" {
   database                     = var.target_db_name
   schema                       = var.target_schema_name
-  name                         = "SNOWFLAKE_LOAD_FF_COMMA4"
+  name                         = "SNOWFLAKE_LOAD_FF_COMMA6"
   format_type                  = "CSV"
   field_delimiter              = ","
   compression                  = "AUTO"
