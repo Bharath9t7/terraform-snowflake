@@ -30,6 +30,9 @@ jobs:
 
       - name: Terraform Init
         id: init
+        environment: dev
+        env:
+          TF_VAR_env: "DEV"
         run: terraform init
 
       - name: Terraform Validate
