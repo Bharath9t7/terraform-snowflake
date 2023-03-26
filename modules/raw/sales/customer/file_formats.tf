@@ -56,7 +56,6 @@ resource "snowflake_file_format" "file_format_pipe2" {
   escape_unenclosed_field      = "NONE"
   field_optionally_enclosed_by = "NONE"
 }
-
 # resource "snowflake_file_format_grant" "file_format_ownership_grant_1" {
 #   database_name     = var.target_db_name
 #   schema_name       = var.target_schema_name
