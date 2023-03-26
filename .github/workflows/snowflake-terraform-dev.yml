@@ -11,8 +11,7 @@ jobs:
     name: "Snowflake-Dev"
     runs-on: ubuntu-latest
     environment: dev
-    env:
-      TF_VAR_env: "DEV"
+    
     steps:
       - name: Checkout
         uses: actions/checkout@v2
