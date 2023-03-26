@@ -1,19 +1,18 @@
-name: "Snowflake Terraform Demo Workflow"
+name: "Snowflake Terraform Demo Workflow for dev environment"
 
 on:
   push:
-    branches: [main]
+    branches: [dev]
     paths:
       - 'modules/**'
 
 jobs:
-  snowflake-terraform-demo:
-    name: "Snowflake Terraform Demo Job"
+  snowflake-terraform-dev:
+    name: "Snowflake-Dev"
     runs-on: ubuntu-latest
     environment: dev
     env:
-      TF_VAR_target_env: "PROD"
-    
+      TF_VAR_target_env: "DEV"
     steps:
       - name: Checkout
         uses: actions/checkout@v2
